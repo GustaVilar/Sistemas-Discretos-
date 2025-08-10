@@ -12,3 +12,8 @@ Gato: estados G1 a G5 representam a posição do gato, com eventos de movimenta�
 Rato: estados R1 a R5 representam a posição do rato, com eventos Move_RatoE1 e Move_RatoD (movimentos não controláveis).
 
 As transições foram definidas de modo que cada evento move o personagem para a sala adjacente correspondente. As colisões (mesma sala para gato e rato) foram modeladas como estados perigosos e bloqueados pelo supervisor. O Supervisor foi então sintetizado para evitar essas colisões, mantendo o sistema não bloqueante e permitindo o máximo de liberdade possível.
+
+
+<img width="1536" height="1024" alt="Circuito do Gato e Rato" src="https://github.com/user-attachments/assets/a5c278f1-90d0-43dc-a86f-26134640ba8b" />
+
+
