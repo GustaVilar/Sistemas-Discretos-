@@ -104,7 +104,7 @@ Com os testes de verificação do Supremica, ficou confirmado que:
 
 Este projeto permitiu aplicar na prática os conceitos de autômatos finitos e da ferramenta Supremica em um problema de modelagem mais próximo de situações reais. A utilização de autômatos para representar o movimento do gato, do rato, das portas e da alternância demonstrou ser uma abordagem eficiente para aprofundar o entendimento sobre supervisão de eventos discretos.
 
-Ao atribuir funções específicas a cada autômato — como o deslocamento do gato (eventos controláveis), os movimentos espontâneos do rato (eventos não controláveis), o controle das portas e a organização da ordem de execução — foi possível coordenar as interações do sistema de forma estruturada. O processo de síntese do supervisor mostrou como evitar colisões (estados indesejados) e, ao mesmo tempo, manter o sistema não bloqueante e com a máxima liberdade possível de movimento.
+Ao atribuir funções específicas a cada autômato — como o deslocamento do gato (eventos controláveis), os movimentos espontâneos do rato (eventos não controláveis) e o controle das portas  — foi possível coordenar as interações do sistema de forma estruturada. O processo de síntese do supervisor mostrou como evitar colisões (estados indesejados) e, ao mesmo tempo, manter o sistema não bloqueante e com a máxima liberdade possível de movimento.
 
 Além disso, o trabalho reforçou a importância de se distinguir entre eventos controláveis e não controláveis dentro do Supremica, mostrando como essa separação influencia diretamente nas estratégias de supervisão e na robustez do sistema.
 
