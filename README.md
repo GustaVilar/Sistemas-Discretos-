@@ -95,7 +95,7 @@ Com os testes de verificação do Supremica, ficou confirmado que:
 - O Sistema é não bloqueante.
 - O Sistema é livre de deadlock.
 
-## Resultado final
+## Resultado final e explicação do modelo
 
 [![Assista no YouTube](https://img.youtube.com/vi/G9lkIe-FZCE/hqdefault.jpg)](https://youtu.be/G9lkIe-FZCE)
 
