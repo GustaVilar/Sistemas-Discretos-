@@ -13,7 +13,6 @@ O gato possui eventos controláveis
 enquanto os movimentos do rato são não controláveis. 
 - <img width="427" height="363" alt="ChatGPT Image 16 de ago  de 2025, 19_18_20" src="https://github.com/user-attachments/assets/5414a829-66a2-41ff-bf2d-a47b75d0b09c" />
 
-Além disso, foi incluído um autômato de alternância, que organiza a ordem dos movimentos.
 
 O modelo foi criado para permitir a síntese de um supervisor que garanta duas propriedades principais:
 
@@ -45,16 +44,16 @@ Estados R1 a R5 representam a posição do rato. Os eventos de movimentação, c
 
 Foram modelados quatro autômatos adicionais para as portas localizadas entre as salas 1–2, 2–3, 3–4 e 4–5. Cada porta possui dois estados, Aberta e Fechada, com eventos de controle Abrir_xy e Fechar_xy. Quando a porta está em Aberta, os eventos de passagem do gato e do rato associados àquela conexão (por exemplo, Gato_12, Rato_12, Gato_21, Rato_21 na Porta12) são permitidos; no estado Fechada, esses eventos são bloqueados. A passagem 5–1 permanece livre, garantindo que o sistema não fique bloqueado.
 
-- <img width="427" height="363" alt="image" src="https://github.com/user-attachments/assets/2166f8c2-7d47-42ec-8ee7-68047f20edc9" />
-
-4. Alternância
-
-Foi criado um autômato de alternância para organizar a sequência de movimentos, restringindo quais eventos podem ocorrer em cada turno, de forma a manter a compatibilidade com os eventos controláveis do sistema.
-
-- <img width="200" height="500" alt="image" src="https://github.com/user-attachments/assets/cb04047e-c94c-42af-92b1-286ee168a59f" />
+<img width="427" height="363" alt="image" src="https://github.com/user-attachments/assets/d12498bd-d9ed-4a24-a3c7-e4a16514600d" />
 
 
 As colisões (gato e rato na mesma sala) foram representadas como estados indesejados na especificação de segurança, sendo evitadas pelo supervisor. As portas foram modeladas na planta como restrições físicas ao deslocamento: quando estão fechadas, bloqueiam os eventos de passagem associados, tanto para o gato quanto para o rato. Dessa forma, o supervisor sintetizado no Supremica atua apenas desabilitando os movimentos do gato que levariam a colisões, enquanto as portas oferecem uma camada adicional de controle físico definida pelo ambiente. 
+
+
+Essa imagem representa uma breve simulação do sistema modelado no Supremica. Nela, o gato e o rato se movimentam pelas salas conectadas em ciclo, passando pelas portas que regulam o acesso entre os ambientes. As setas destacadas ilustram os possíveis caminhos que cada personagem pode seguir durante a execução: o gato segue sua trajetória controlada, enquanto o rato realiza movimentos não controláveis. O objetivo do modelo é justamente evitar colisões (quando ambos estariam na mesma sala), garantindo segurança, não bloqueio do sistema e liberdade máxima de movimento.
+
+<img src="https://github.com/user-attachments/assets/15be9c97-4786-44d0-840b-68505ef20110" alt="Simulação do sistema" width="400"/>
+
 
 
 ## Função no sistema:
