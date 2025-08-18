@@ -96,6 +96,11 @@ Com os testes de verificação do Supremica, ficou confirmado que:
 - O Sistema é não bloqueante.
 - O Sistema é livre de deadlock.
 
+## Resultado final
+
+[![Assista no YouTube](https://img.youtube.com/vi/G9lkIe-FZCE/hqdefault.jpg)](https://youtu.be/G9lkIe-FZCE)
+
+
 ## Considerações
 
 Este projeto permitiu aplicar na prática os conceitos de autômatos finitos e da ferramenta Supremica em um problema de modelagem mais próximo de situações reais. A utilização de autômatos para representar o movimento do gato, do rato, das portas e da alternância demonstrou ser uma abordagem eficiente para aprofundar o entendimento sobre supervisão de eventos discretos.
