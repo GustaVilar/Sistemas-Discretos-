@@ -44,7 +44,8 @@ Estados R1 a R5 representam a posição do rato. Os eventos de movimentação, c
 
 Foram modelados quatro autômatos adicionais para as portas localizadas entre as salas 1–2, 2–3, 3–4 e 4–5. Cada porta possui dois estados, Aberta e Fechada, com eventos de controle Abrir_xy e Fechar_xy. Quando a porta está em Aberta, os eventos de passagem do gato e do rato associados àquela conexão (por exemplo, Gato_12, Rato_12, Gato_21, Rato_21 na Porta12) são permitidos; no estado Fechada, esses eventos são bloqueados. A passagem 5–1 permanece livre, garantindo que o sistema não fique bloqueado.
 
-- <img width="427" height="363" alt="image" src="https://github.com/user-attachments/assets/d12498bd-d9ed-4a24-a3c7-e4a16514600d" />
+- <img width="427" height="363" alt="image" src="https://github.com/user-attachments/assets/37da4b09-f616-495c-9227-37451d85fbdc" />
+
 
 
 As colisões (gato e rato na mesma sala) foram representadas como estados indesejados na especificação de segurança, sendo evitadas pelo supervisor. As portas foram modeladas na planta como restrições físicas ao deslocamento: quando estão fechadas, bloqueiam os eventos de passagem associados, tanto para o gato quanto para o rato. Dessa forma, o supervisor sintetizado no Supremica atua apenas desabilitando os movimentos do gato que levariam a colisões, enquanto as portas oferecem uma camada adicional de controle físico definida pelo ambiente. 
