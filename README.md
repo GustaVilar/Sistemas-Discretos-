@@ -102,7 +102,7 @@ Com os testes de verificação do Supremica, ficou confirmado que:
 
 ## Resultado final e explicação do modelo
 
-[![Assista no YouTube](https://img.youtube.com/vi/G9lkIe-FZCE/hqdefault.jpg)](https://youtu.be/ZUgeFAC5d58?si=1LUfAPxaTTHBYoGG)
+[![Assista no YouTube](https://img.youtube.com/vi/G9lkIe-FZCE/hqdefault.jpg)](https://www.youtube.com/watch?v=ZUgeFAC5d58)
 
 
 ## Considerações
